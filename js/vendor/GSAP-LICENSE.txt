@@ -1,0 +1,23 @@
+GSAP 3.12.5 (gsap.min.js and ScrollTrigger.min.js)
+Copyright 2024, GreenSock. All rights reserved.
+
+These files are used under the GSAP Standard "No Charge" License.
+The official terms are at: https://gsap.com/standard-license
+
+Plain-English summary (see the official page for the binding terms):
+You may use the code at no charge in commercial or non-commercial apps,
+web sites, games, components, and other software as long as end users
+are not charged a fee of any kind to use your product or gain access
+to any part of it. If a client pays a one-time fee to create the
+site/product, that qualifies under the "no charge" license. If end
+users are charged a usage, access, or license fee, a Club GSAP
+Business membership (with a commercial license) is required.
+See https://gsap.com/pricing/ for details.
+
+Use at your own risk. No warranties are offered. Please respect the
+copyright.
+
+The npm package license field for this version is:
+Standard 'no charge' license: https://gsap.com/standard-license
+Club GSAP members get more: https://gsap.com/licensing/
+Why GreenSock doesn't employ an MIT license: https://gsap.com/why-license/

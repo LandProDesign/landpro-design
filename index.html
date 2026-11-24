@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Land Pro Design — Landscape design, tools, and apps</title>
+  <meta name="description" content="Landscape design, tools, and apps built by a working landscaper. Designs, consultations, and software from Spencer Cuevas of Iron Hills Landscaping.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/hero-poster.jpg">
+  <link rel="preload" as="image" href="assets/logo/wordmark-v3.svg">
+  <link rel="preload" as="image" href="assets/scrub/poster.jpg">
+  <link rel="preload" as="image" href="assets/scrub/frame-001.webp">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="nav-logo" href="#hero" aria-label="Land Pro Design, back to top">
+      <img src="assets/logo/wordmark-v3.svg" width="1014" height="351" alt="Land Pro Design">
+    </a>
+    <nav class="nav-links" data-menu aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#apps">Apps</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a class="btn btn-outline nav-cta-mobile" href="#consult">Book a Consultation</a>
+    </nav>
+    <a class="btn btn-outline nav-cta" href="#consult">Book a Consultation</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+          <source src="assets/hero-720.mp4" type="video/mp4" media="(max-width: 800px)">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Land Pro Design</p>
+        <h1 class="hero-title">
+          <span class="reveal"><span class="reveal-line">Landscape design,</span></span>
+          <span class="reveal"><span class="reveal-line">tools, and apps</span></span>
+          <span class="reveal"><span class="reveal-line">built by a working</span></span>
+          <span class="reveal"><span class="reveal-line"><em>landscaper.</em></span></span>
+        </h1>
+        <p class="hero-sub">Designs, consultations, and software from Spencer Cuevas of Iron Hills Landscaping.</p>
+        <div class="hero-actions">
+          <a class="btn btn-fill" href="#services">Explore Services</a>
+          <a class="btn btn-outline" href="#apps">See the Apps</a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#intro" aria-label="Scroll to the next section">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="intro" id="intro">
+      <div class="intro-inner">
+        <p class="eyebrow">A working studio</p>
+        <h2 class="intro-title">
+          <span class="reveal"><span class="reveal-line">Designs, consultations,</span></span>
+          <span class="reveal"><span class="reveal-line">and software from</span></span>
+          <span class="reveal"><span class="reveal-line"><em>Spencer Cuevas</em></span></span>
+          <span class="reveal"><span class="reveal-line">of Iron Hills Landscaping.</span></span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="scrub" id="walkthrough" aria-label="3D design walkthrough">
+      <div class="scrub-pin">
+        <img class="scrub-poster" data-scrub-poster src="assets/scrub/poster.jpg" width="1920" height="1080" alt="">
+        <canvas id="scrub-canvas" aria-hidden="true"></canvas>
+        <div class="scrub-veil"></div>
+        <div class="scrub-ui">
+          <div class="scrub-copy">
+            <p class="eyebrow">A 3D design walkthrough</p>
+            <h2>
+              <span class="reveal"><span class="reveal-line">Walk the plan.</span></span>
+            </h2>
+            <p class="scrub-caption">A 3D backyard, from a bare lot through grading, hardscape, planting, and lighting, ending at dusk — tied to your scroll. This is a render, not a finished photograph.</p>
+          </div>
+          <ol class="scrub-labels" data-scrub-labels>
+            <li data-from="0" data-to="0.20" class="is-active"><span>01</span> Bare lot</li>
+            <li data-from="0.20" data-to="0.40"><span>02</span> Grading &amp; walls</li>
+            <li data-from="0.40" data-to="0.74"><span>03</span> Hardscape</li>
+            <li data-from="0.74" data-to="1"><span>04</span> Planting &amp; lighting</li>
+          </ol>
+          <div class="scrub-progress" aria-hidden="true">
+            <span data-scrub-bar></span>
+          </div>
+          <p class="scrub-meta"><span data-scrub-pct>00</span> / 100</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="horizontal" id="services">
+      <div class="horizontal-pin">
+        <div class="horizontal-track" data-htrack>
+          <article class="h-card">
+            <div class="h-card-media">
+              <img src="assets/stills/welch-lawn.jpg" alt="A 3D view of a terraced lawn and planted beds beside a white house." data-parallax>
+            </div>
+            <div class="h-card-body">
+              <p class="eyebrow">What we offer · 01</p>
+              <h2>Design <em>services.</em></h2>
+              <p>Landscape designs and consultations from a working landscaper. Plans are drawn so a crew can actually build them.</p>
+              <a class="btn btn-fill" href="#consult">Book a Consultation</a>
+            </div>
+          </article>
+          <article class="h-card">
+            <div class="h-card-media">
+              <img src="assets/stills/frost-garden.jpg" alt="A 3D planting design with stone steps, grasses, and a flowering tree." data-parallax>
+            </div>
+            <div class="h-card-body">
+              <p class="eyebrow">Apps · 02</p>
+              <p class="badge">Coming soon</p>
+              <h2>Concept <em>Sample.</em></h2>
+              <p>A ready-to-use tool for your landscape company. Upload your logo, set your price, and start getting paid for your designs.</p>
+              <a class="btn btn-outline" href="#apps">See how it works</a>
+            </div>
+          </article>
+          <article class="h-card">
+            <div class="h-card-media">
+              <img src="assets/stills/muramoto-living.jpg" alt="A 3D evening view of a patio, path lights, and a covered outdoor living area." data-parallax>
+            </div>
+            <div class="h-card-body">
+              <p class="eyebrow">What's next · 03</p>
+              <p class="badge">In development</p>
+              <h2>LandPro3D.</h2>
+              <p>3D landscape design software, currently in development. Join the waitlist and we'll let you know when there's something to see.</p>
+              <a class="btn btn-outline" href="#consult">Join the waitlist</a>
+            </div>
+          </article>
+          <article class="h-card">
+            <div class="h-card-media">
+              <img src="assets/stills/welch-walk.jpg" alt="A 3D walkway lined with hedges, path lights, and planted borders." data-parallax>
+            </div>
+            <div class="h-card-body">
+              <p class="eyebrow">What's next · 04</p>
+              <p class="badge">Coming soon</p>
+              <h2>Brushes &amp; <em>courses.</em></h2>
+              <p>The Procreate brushes used to sketch landscape concepts, plus lessons on drawing your own.</p>
+              <a class="btn btn-outline" href="#consult">Get notified</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="apps" id="apps">
+      <div class="apps-grid">
+        <div class="apps-copy">
+          <p class="eyebrow">Apps</p>
+          <p class="badge">Coming soon</p>
+          <h2>
+            <span class="reveal"><span class="reveal-line">Concept Sample</span></span>
+            <span class="reveal"><span class="reveal-line">for Landscapers.</span></span>
+          </h2>
+          <p class="lede">A ready-to-use tool for your landscape company. Upload your logo, set your price, and start getting paid for your designs.</p>
+          <ol class="steps">
+            <li><span>01</span> Add your logo and pricing</li>
+            <li><span>02</span> Upload a design</li>
+            <li><span>03</span> Send a protected preview</li>
+            <li><span>04</span> Client pays to unlock</li>
+          </ol>
+        </div>
+        <figure class="apps-visual">
+          <img src="assets/stills/frost-patio.jpg" alt="">
+          <figcaption>Placeholder for the Concept Sample interface. The app is coming soon, so this still is a stand-in, not a product screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-label="Recent 3D design films">
+      <header class="work-head">
+        <p class="eyebrow">Recent films</p>
+        <h2>
+          <span class="reveal"><span class="reveal-line">Three recent</span></span>
+          <span class="reveal"><span class="reveal-line"><em>3D design films.</em></span></span>
+        </h2>
+        <p>These walkthroughs were produced for Iron Hills Landscaping design jobs and published on the company's YouTube channel. They are design films, not photographs of finished work.</p>
+      </header>
+      <div class="work-list">
+        <article class="work-item">
+          <a class="work-media" href="https://www.youtube.com/watch?v=PjwUBdGf_ds" target="_blank" rel="noopener noreferrer">
+            <img src="assets/stills/muramoto-arrival.jpg" alt="Nighttime 3D view of the Muramoto residence entry, path, and planting.">
+          </a>
+          <div class="work-meta">
+            <p class="eyebrow">01 · October 2026</p>
+            <h3>Muramoto</h3>
+            <p>A 3D walk through the entry, planting, and outdoor living areas.</p>
+            <a class="text-link" href="https://www.youtube.com/watch?v=PjwUBdGf_ds" target="_blank" rel="noopener noreferrer">Watch the film</a>
+          </div>
+        </article>
+        <article class="work-item">
+          <a class="work-media" href="https://www.youtube.com/watch?v=n-zA_iS-2kM" target="_blank" rel="noopener noreferrer">
+            <img src="assets/stills/frost-fire.jpg" alt="3D view of a paved outdoor room with a fire feature and planted borders.">
+          </a>
+          <div class="work-meta">
+            <p class="eyebrow">02 · October 2026</p>
+            <h3>Frost</h3>
+            <p>Courtyard, planting, and outdoor rooms from a recent design film.</p>
+            <a class="text-link" href="https://www.youtube.com/watch?v=n-zA_iS-2kM" target="_blank" rel="noopener noreferrer">Watch the film</a>
+          </div>
+        </article>
+        <article class="work-item">
+          <a class="work-media" href="https://www.youtube.com/watch?v=Wt7Ipayh0L4" target="_blank" rel="noopener noreferrer">
+            <img src="assets/stills/welch-front.jpg" alt="3D dusk view of the Welch residence and front planting.">
+          </a>
+          <div class="work-meta">
+            <p class="eyebrow">03 · September 2026</p>
+            <h3>Welch</h3>
+            <p>Walkways, lawn, and planted edges from the Welch design movie.</p>
+            <a class="text-link" href="https://www.youtube.com/watch?v=Wt7Ipayh0L4" target="_blank" rel="noopener noreferrer">Watch the film</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="shop-inner">
+        <p class="eyebrow">Shop</p>
+        <h2>The shop is being set up.</h2>
+        <p>Tools and resources for landscapers will be listed here as they become available. Nothing is for sale on this page yet.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>
+            <span class="reveal"><span class="reveal-line">Built beside</span></span>
+            <span class="reveal"><span class="reveal-line">the work itself.</span></span>
+          </h2>
+          <p>Land Pro Design is the design and software studio of Spencer Cuevas, of Iron Hills Landscaping. The practice covers landscape designs, consultations, and software made for landscapers.</p>
+          <p>The 3D films on this page come from live design work. Apps and tools are released as they are ready — Concept Sample, LandPro3D, and the brush kit are not for sale yet.</p>
+        </div>
+        <figure class="about-visual">
+          <img src="assets/stills/muramoto-path.jpg" alt="A 3D path of flagstones, river rock, and planted pots along a fence line.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="consult" id="consult">
+      <div class="consult-grid">
+        <div class="consult-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Book a <em>consultation.</em></h2>
+          <p>Tell us a little about the project. This review mockup does not send messages; on the live site, requests will come to Land Pro Design.</p>
+          <p class="consult-email">Or write directly: <a href="mailto:spencer@landpro.design">spencer@landpro.design</a></p>
+        </div>
+        <form class="consult-form" data-mock-form novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Project notes</span>
+            <textarea name="notes" rows="5"></textarea>
+          </label>
+          <button class="btn btn-fill" type="submit">Send a request</button>
+          <p class="form-note" data-form-note hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <a class="nav-logo footer-logo" href="#hero" aria-label="Land Pro Design">
+        <img src="assets/logo/wordmark-v3.svg" width="1014" height="351" alt="Land Pro Design">
+      </a>
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#apps">Apps</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#consult">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Land Pro Design. Review mockup — not the live site. Copy is pending legal review.</p>
+      <p class="footer-legal">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </p>
+    </div>
+    <div class="footer-placeholders" id="privacy">
+      <p><strong>Privacy</strong> and <strong>Terms</strong> pages are placeholders. Final legal copy will be reviewed before publish.</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
